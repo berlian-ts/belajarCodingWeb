@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>#3 dom Manipulation part 1</title>
+
+    <style>
+      * {
+          border: 2px solid #dedede;
+          padding: 15px;
+          margin: 15px;
+      }
+      html {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        max-width: 600px;
+        margin: 30px auto;
+        font-family: sans-serif;
+        color: #333;
+      }
+    </style>
+
+  </head>
+  <body>
+    <h1 id="judul">Hello World</h1>
+    <div id="container">
+        <section id="a">
+            <p class="p1">paragraf 1</p>
+            <a href="http://instagram.com/berlian_ts">Instagram BerlianTS</a>
+            <p class="p1">paragraf 2</p>
+            <p class="p1">paragraf 3</p>
+        </section>
+        <section id="b">
+            <p>paragraf 4</p>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ul>
+        </section>
+    </div>
+
+    <script type="text/javascript">
+      /*
+        element.innerHTML
+          -merubah isi dari sebuah tag yg sudah kita isi
+        element.style.<property>
+          -untuk merubah style/css dari elemen yg sudah kita seleksi
+        element.setAttribute()
+          -untuk memanipulasi attribute pada suatu elemen yg sudah diseleksi
+        element.classList
+          -untuk memanipulasi class
+      */
+
+      const judul = document.getElementById('judul');
+      judul.innerHTML = 'judul "jadi" Berlian Tri Saputra';
+
+      const a = document.querySelector('#a a');
+      a.setAttribute('id', 'link');
+      // muncul attribute bru : id = "link"
+      // Menghilangkan attribute --> a.removeAttribute('id')
+
+      const p2 = document.querySelector('.p2');
+      // p2.setAttribute('class', 'label') --> ini menimpa class
+
+      /*
+        element.classList.add()
+        element.classList.remove()
+        element.classList.toggle() menambah + menghapus
+        element.classList.item()
+        element.classList.contains()
+        element.classList.replace()
+      */
+
+    </script>
+
+  </body>
+</html>

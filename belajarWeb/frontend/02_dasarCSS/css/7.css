@@ -1,0 +1,37 @@
+body{
+  font-family: arial;
+}
+
+/* tanda(,) berarti "dan" */
+h1, h2 {
+  color: green;
+}
+
+/* css tolong pilihkan tag "a" yang di dalam "li" yang di dalam "ul" */
+/* space berarti "di dalam" */
+ul li a{
+  color: orange;
+}
+
+ol li a{
+  color: red;
+}
+
+/* memberi properti berbeda di <p> */
+#p1{
+  color: orange;
+}
+.p2{
+  color: red;
+}
+
+p.yt{ 
+  font-size: 30px;
+}
+
+/* 1.Sebuah elemen HTML hanya boleh memilki 1 id
+   2.Setiap halaman hanya boleh memiliki 1 elemen dengan id tersebut
+   3.Dapat digunakan sebagai oenanda halaman untuk link
+   4.Digunakan juga untuk javascript
+   5.Sebaiknya tidak digunakan untuk CSS(lebih baik gunakan "class")
+ */

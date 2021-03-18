@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>dom Events</title>
+
+    <style media="screen">
+      .p1 {
+        padding: 1cm;
+        border: solid 5px black;
+        display: inline-block;
+
+      }
+      .p1:active {
+        background-color: lightblue;
+      }
+
+      .p2 {
+        padding: 1cm;
+        border: solid 5px black;
+        display: inline-block;
+      }
+      .p3 {
+        padding: 1cm;
+        border: solid 5px black;
+        display: inline-block;
+        background-color: red;
+        transition: 1s;
+      }
+      .p33 {
+        background-color: white;
+      }
+
+      .tombol1 {
+        width: 3cm;
+        height: 2cm;
+        background-color: lightblue;
+        line-height: 2cm;
+        text-align: center;
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <p class='p1'>Klik active css</p>
+    <br>
+    <p class='p2'>Events klik js</p>
+    <br>
+    <p class='p3 p33'>Events toogle js</p>
+    <br>
+    <div class="tombol1"></div>
+    <br>
+
+
+
+    <script type="text/javascript">
+      const p2 = document.querySelector('.p2');
+
+      function mouseklik() {
+        p2.style.backgroundColor = 'lightblue';
+      }
+      p2.onclick = mouseklik;
+
+      const p3 = document.querySelector('.p3');
+      function mouseklik2() {
+        p3.classList.toggle('p33');
+      }
+      p3.onclick = mouseklik2;
+
+      // -------------tambah item baru------------------
+      var i = 1;
+      const newItem = document.querySelector('.tombol1');
+      newItem.innerHTML = "Tambah Item";
+      newItem.addEventListener('click', function() {
+        const divv = document.querySelector('body');
+        const baru = document.createElement("p");
+        const text = document.createTextNode("Item Baru ke- " + i);
+        i++;
+        baru.appendChild(text);
+        divv.appendChild(baru);
+      });
+
+    </script>
+
+  </body>
+</html>

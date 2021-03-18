@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>js_10(Switch Case)</title>
+  </head>
+  <body>
+
+  <script type="text/javascript">
+    var kategori
+    var range_nilai
+    var nilai='tinggi'
+    switch (nilai) {
+      case 'rendah':
+        range_nilai = 'nilai 40 sampai 60'
+        kategori = 'jelek'
+        break
+      case 'sedang':
+        range_nilai = ' nilai 71 sampai 80'
+        kategori = 'cukup'
+        break
+      case 'tinggi':
+        range_nilai = 'nilai 81 sampai 100'
+        kategori = 'bagus'
+        break
+      default:
+        range_nilai = 'data tidak ada dalam kategori'
+    }
+    document.write('Nilai anda kategori ' +kategori+ ", berada di : " +range_nilai)
+  </script>
+  </body>
+</html>

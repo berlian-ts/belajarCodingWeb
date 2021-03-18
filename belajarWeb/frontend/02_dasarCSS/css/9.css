@@ -1,0 +1,12 @@
+body{
+  color: green;
+  font-size: 75px;
+}
+
+/* elemen <a> tidak mewarisi porperti color */
+a{
+  /* supaya <a> bisa mewarisi properti apapun dari parent/ortunya yaitu
+     "body" */
+  color: inherit;
+  text-transform: capitalize;
+}

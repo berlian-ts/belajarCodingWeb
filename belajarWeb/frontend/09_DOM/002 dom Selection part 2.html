@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dom Selection</title>
+  <style>
+    * {
+        border: 2px solid #dedede;
+        padding: 15px;
+        margin: 15px;
+    }
+    html {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      max-width: 600px;
+      margin: 30px auto;
+      font-family: sans-serif;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="judul">Hello World</h1>
+  <div id="container">
+      <section id="a">
+          <p class="p1">paragraf 1</p>
+          <a href="http://instagram.com/berlian_ts">Instagram BerlianTS</a>
+          <p class="p2">paragraf 2</p>
+          <p class="p3">paragraf 3</p>
+      </section>
+      <section id="b">
+          <p>paragraf 4</p>
+          <ul>
+              <li>item 1</li>
+              <li class="li2">item 2</li>
+              <li>item 3</li>
+          </ul>
+      </section>
+  </div>
+
+<script>
+    // document.querySelector --> element
+    // carikan saya elemen yd id nya b,
+    // lalu cari didalamnya p
+    const p4 = document.querySelector('#b p');
+    p4.style.color = 'green';
+
+    const li2 = document.querySelector('.li2');
+    li2.style.backgroundColor = 'orange';
+
+
+    // document.querySelectorAll -->HTMLCollection
+    const p = document.querySelectorAll('p');
+    for (let i=0; i<p.length; i++) {
+      p[i].style.backgroundColor = 'red';
+    }
+
+    /*const sectionB = document.querySelector('section #b');
+    const p4 = sectionB.getElementsByTagName('p')[0];
+    p4.style.backgroundColor = 'pink'; */
+
+</script>
+</body>
+</html>

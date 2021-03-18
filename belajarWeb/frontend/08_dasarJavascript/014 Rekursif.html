@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Rekursif</title>
+    </head>
+    <body>
+
+    <script type="text/javascript">
+        /*
+            Rekursif : sebuah fungsi yg memanggil dirinya sendiri
+
+            base case : kondisi akhir dari rekursif yg menghasilkan nilai
+
+            semua looping bisa dibuat rekursif, tapi tidak sebaliknya
+        */
+        function tampilAngka (n) {
+            if (n===0) return; // <--basecase : agar rekursifny berhenti
+            document.write(n+ "<br>");
+            return tampilAngka(n-1);
+        }
+        tampilAngka(10);
+
+        // Rekursif :
+        document.write ("<br><br>Faktorial : 3! = 3 x 2 x 1, hasil = ");
+        function faktorial (n) {
+            if (n === 1) return 1;
+            return n * faktorial (n-1);
+        }
+        document.write(faktorial(3));
+
+        // pake FOR :
+        document.write ("<br><br>Faktorial(pake for) : 3! = 3 x 2 x 1, hasil = ");
+        function faktorial2 (n) {
+            var hasil = 1;
+            for (var a=n; a>0; a--) {
+                hasil *= a;
+            }
+            return hasil;
+        }
+        document.write(faktorial2(3));
+
+
+    </script>
+
+    </body>
+</html>

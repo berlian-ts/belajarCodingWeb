@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-size: 50px;
+            text-align: center;
+            color : red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Judul</h1>
+    <script>
+        var a = prompt("rubah warna font jadi hijau (y/n) ?");
+        if (a == "y") {
+            const h1 = document.getElementsByTagName('h1');
+            h1[0].style.color = 'green';
+            alert ("Warna berhasil di Rubah !!");
+        }
+    </script>
+</body>
+</html>

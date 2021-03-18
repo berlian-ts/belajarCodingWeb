@@ -1,0 +1,31 @@
+h1{
+  /*1. Color */
+  font-size: 150px;
+  font-style: italic;
+  color: pink; /* #f4f3e1; -- rgb(11,225,101);   */
+
+  /* 5. text-transform:  none/lowercase/uppercase/capitalized (huruf awal kata jdi kapital)*/
+  text-transform: uppercase;
+
+}
+a{
+  /*4. text decoration: none/underline/overline/line-through */
+  text-decoration: none;
+}
+
+p{
+  font-size: 18px;
+  /*2. text align (meluruskan): left, right, center, justify(rata kiri-kanan) */
+  text-align: right;
+
+  /*3. text indent(jarak awal spasi!): px & % */
+  text-indent: 10px;
+
+  /* 6.letter-spacing: normal/px */
+  letter-spacing: normal;
+
+  /* 7.word-spacing: normal/px */
+  word-spacing: 7px;
+
+
+}

@@ -1,0 +1,13 @@
+Git Command (local)
+- git init
+- git add <file(s)>
+- git status
+- git commit
+- git config
+- git branch
+- git help
+
+3 area pada repo Gitt
+- working tree
+- staging area
+- history

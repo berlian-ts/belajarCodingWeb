@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+
+    <script type="text/javascript">
+    /* function adalah :
+        1. blok kode yg dibuat untuk melalkukan tugas spesifik
+        2. dapat dipanggil berulang sekali
+        3. memudahkan penelusuran
+        4. Reusabilty
+
+         !! return = hasil akhir yg nilainya disimpan ke function */
+
+        function volumekubus(a, b) {
+            var volumeA;
+            var volumeB;
+            var total;
+
+            volumeA = a * a * a;
+            volumeB = b * b * b;
+
+            total = volumeA + volumeB;
+
+            return total;
+        }
+        document.write ("Ini function volumekubus : " +volumekubus(8, 3) + "<br>");
+
+        //
+        function kali (a,b) {
+            return a * b;
+        }
+
+        function tambah (a,b) {
+            return a + b;
+        }
+
+        var tampil = kali (tambah(4,5), tambah(2,2));
+        document.write ("Ini function kali&tambah : " +tampil +"<br>");
+
+        //
+        function last() {
+            var hasil = 0;
+            for (var a=0; a<arguments.length; a++) {
+                hasil += arguments[a];
+            }
+            return hasil;
+        }
+        var coba = last(3,2,5,6);
+        document.write ("Ini function last : " +coba);
+    </script>
+
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Transition-1</title>
+        <style media="screen">
+            body {
+                margin: 0;
+                padding: 0;
+                border: 1px black solid;
+            }
+            .container {
+                width: 900px;
+                border: 5px solid black;
+                margin: 20px auto;
+                background-color: grey;
+            }
+            .kotak {
+                /*
+                    transition:
+                     [property] <durasi(s/ms)> [fungsi] [delay]
+                */
+                width: 100px;
+                height: 100px;
+                background-color: salmon;
+                transition: margin-left 1.5s 0.5s, transform 1s 1s;
+            }
+            .container:hover .kotak {
+                transform: rotate(180deg);
+                background-color: green;
+                margin-left: 800px;
+                /*
+                    Animatable properties (bisa di animasikan):
+                      background-color          top left bottom right
+                      background-position       margin padding
+                      background-size           width height
+                      border                    opacity
+                      color                     transform
+                      filter                    word-spacing
+                      font-size                 letter-spacing
+                      line height
+
+                    non-animatable properties (tidak bisa dianimasikan):
+                      font-family
+                      display
+                      position
+                */
+            }
+        </style>
+    </head>
+    <body>
+
+    <div class="container">
+        <div class="kotak"></div>
+    </div>
+
+    </body>
+</html>

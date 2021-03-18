@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Variable Scope</title>
+    </head>
+    <body>
+
+    <script type="text/javascript">
+    /*
+        Block scope vs Function scope :
+          1. blok scope :
+            if (i % 2 == 0) {
+                bool genap = true;
+            }
+            --> program error, karena var genap hanya berlaku di dalam
+                blok scope saja
+          2.  Function scope :
+          if (i % 2 == 0) {
+              bool genap = true;
+          }
+          --> program tidak error karena javascript menggunakan konsep
+              function scope*/
+        var a = 1;
+
+        function tes() {
+            // membuat variable lokal hrus buat "var di dlm function"
+            var a = 2;
+            // a = 2;
+            document.write("didalam function : "+a);
+        }
+        document.write ("diluar function : "+a);
+
+        //
+        var b = 1;
+        function tess() {
+            document.write (b);
+        }
+        tess(2)
+    </script>
+
+    </body>
+</html>

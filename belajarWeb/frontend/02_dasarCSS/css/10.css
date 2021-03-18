@@ -1,0 +1,32 @@
+  /* p { color: red; }
+     p { color: green; }
+     ==> paragraf akan berwarna hijau, karen p2 ke-2 akan menimpa/overide
+         properti yang pertama
+
+     #p1 { color: red; }
+     p { color: green; }
+     ==> id p1 / (crash)#p1 lebih spesifik dari pada <p>
+
+     0  0  0  0  |  inline  id  class  lement
+
+     #p1 = 0  1  0  0  |  ada id 1  ("100" lebih berat, pasti terpilih dan menang)
+     p   = 0  0  0  1  |  ada element 1  ("1" lebih ringan, kalah) */
+
+ul#sarapan li{
+  color: green;
+ }
+.favorit{
+  color: red;
+}
+
+/* Cara supaya bobot elemen menjadi lebih spesifik, dengan cara :
+   1.tambahkan beban pada elemen tersebut agar semakin berat
+
+   CSS tolong carikan saya <li> yg punya class favorit dan dia
+   berada didalam <ul> yang punya id sarapan
+
+   jadinya 0102 vs 0112, jelas menang 0112
+*/
+ul#sarapan li.favorit{
+  color: orange;
+}

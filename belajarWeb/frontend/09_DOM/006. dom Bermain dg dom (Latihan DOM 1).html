@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Latihan DOM 1</title>
+    <style media="screen">
+
+      body {
+        text-align: center;
+      }
+
+      .pink {
+        background-color: pink;
+      }
+
+      .kotak {
+        width: 25px;
+        height: 25px;
+        margin: 10px auto;
+      }
+      .merah {
+        background-color: red;
+      }
+      .hijau {
+        background-color: green;
+      }
+      .biru {
+        background-color: blue;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h1>Bermain dengan Warna</h1>
+    <!-- type button =  submit, reset, button-->
+    <button type="button" name="btton" id="tUbahWarna">Ubah Warna</button>
+    <br><br>
+
+    <!-- slider -->
+    <div class="kotak merah"></div>
+    <input type="range" name="sMerah" value="" min="0" max="255">
+
+    <div class="kotak hijau"></div>
+    <input type="range" name="sHijau" value="" min="0" max="255">
+
+    <div class="kotak biru"></div>
+    <input type="range" name="sBiru" value="" min="0" max="255">
+
+
+    <script src="js/006.js"></script>
+
+  </body>
+</html>

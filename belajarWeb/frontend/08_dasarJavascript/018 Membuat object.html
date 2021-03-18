@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>MEMBUAT OBJECT</title>
+    </head>
+    <body>
+
+    <script type="text/javascript">
+    //MEMBUAT OBJECT
+
+    //object Literal
+    var mhs1 = {
+        nama : 'berliants',
+        umur : 18,
+        jurusan : 'informatika'
+    }
+    var mhs2 = {
+        nama : 'agung',
+        umur : 18,
+        jurusan : 'informatika'
+    }
+
+
+    // Function Declaration
+    function data1 (nama,umur,jurusan) {
+        var mhs = {}; //bikin sebagai objek
+        mhs.nama = nama;
+        mhs.umur = umur;
+        mhs.jurusan = jurusan;
+        return mhs;
+    }
+    var mhs3 = data1('sadam',18,'teknik')
+
+
+    // Constructor
+    function mahasiswa (nama,umur,jurusan) {
+        this.nama = nama;
+        this.umur = umur;
+        this.jurusan = jurusan;
+    }
+    var mhs4 = new mahasiswa ('udin',19,'kehutanan')
+    </script>
+
+    </body>
+</html>

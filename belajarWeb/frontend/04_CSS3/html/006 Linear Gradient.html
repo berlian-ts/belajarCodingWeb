@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Liniear Gradient</title>
+	<style type="text/css">
+		.a {
+			width: 600px;
+			height: 300px;
+			margin: 50px auto;
+
+			/* linear-gradient(warna awal, warna akhir,warna lain) */
+			/* Bisa di tambah sintak <sudut(deg)> | <arah>
+			to bottom,top,left,right.  to left top, to left bottom, to right top, to right bottom */
+			background-image: linear-gradient(45deg,red,green);
+		}	
+		.b {
+			width: 600px;
+			height: 300px;
+			margin: 50px auto;
+
+			/* color stop */
+			background-image: linear-gradient(to left top,pink 100%,black 100%)
+		}
+	</style>
+</head>
+<body>
+
+<div class="a"></div>
+<div class="b"></div>
+</body>
+</html>

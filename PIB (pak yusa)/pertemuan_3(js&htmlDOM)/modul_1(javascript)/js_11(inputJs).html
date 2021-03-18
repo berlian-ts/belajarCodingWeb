@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>js_11(inputJS)</title>
+  </head>
+  <body>
+
+  <script type="text/javascript">
+    var nilai = prompt('Masukkan nilai(A,B,C,D,E) : ')
+    var range_nilai
+    switch (nilai) {
+      case 'A':
+        range_nilai = '75 sampai 100'
+        break
+      case 'B':
+        range_nilai = '65 sampai 74'
+        break
+      case 'C':
+        range_nilai = '55 sampai 64'
+        break
+      case 'D':
+        range_nilai = '45 sampai 54'
+        break
+      case 'E':
+        range_nilai = '0 sampai 44'
+        break
+      default:
+        range_nilai = 'Data yang di inputkan salah!'
+    }
+    alert('Nilai ' +nilai+ ' memiliki range nilai : ' +range_nilai)
+  </script>
+  </body>
+</html>

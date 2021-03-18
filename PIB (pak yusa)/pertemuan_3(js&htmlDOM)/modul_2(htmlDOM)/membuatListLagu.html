@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Playlist Lagu</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <h2>Playlist Lagu</h2>
+    <form>
+      <input type="text" name="" value="" id="songTextInput" size="50" placeholder="Nama Lagu">
+      <input id="addButton" type="button" name="" value="Tambah Lagu">
+    </form>
+    <ul id="playlist"></ul>
+
+
+  <script type="text/javascript">
+    window.onload = init
+    function init() {
+      var button = document.getElementById("addButton")
+      button.onclick = handleButtonClick
+    }
+    function handleButtonClick() {
+      var textInput = document.getElementById("songTextInput")
+      var judulLagu = textInput.value
+      var li = document.createElement("li")
+      li.innerHTML = judulLagu
+      var ul = document.getElementById("playlist")
+      ul.appendChild(li)
+      alert('Menambahkan ' +judulLagu)
+      textInput.value = ""
+    }
+  </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+div {
+	width: 200px;
+	height: 200px;
+}
+
+.satu {
+	background-color: salmon;
+}
+
+.dua {
+	background-color: orange;
+}
+
+.tiga {
+	background-color: lightgreen;
+	float: left;
+}
+
+p{
+	margin-top: 5px;
+	margin-left: 6cm;
+	padding: 15px;
+	border: 5px solid green;
+	box-sizing: content-box;
+	width: 900px;
+}

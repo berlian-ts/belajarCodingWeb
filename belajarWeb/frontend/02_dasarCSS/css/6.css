@@ -1,0 +1,17 @@
+body{
+  /* background: color url() position repeat; */
+
+  background-color: lightblue;
+  background-image: url(../../gambar_web/2.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+/* background-repeat: repeat-x | repeat-y | no-repeat */
+
+/* background-position: top left, center, right | center left, center, right.
+    bottom left, center, right| x%, y% | x-pos, y-pos.*/
+
+h1{
+  color: blue;
+}

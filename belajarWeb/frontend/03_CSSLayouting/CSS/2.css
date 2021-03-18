@@ -1,0 +1,26 @@
+.au {
+	width: 50%;
+	height: 200px;
+	background-color: lightgreen;
+}
+	/* width & height = px/%/in, cm, mm, pt, pc */
+
+.satu {
+	width: 300px;
+	height: 200px;
+	background-color: pink;
+	overflow: auto;
+}
+.dua{
+	width: 50%;
+	background-color: aqua;
+}
+
+/*!--overflow--!
+1.visible = value default. konten keluar parent bila penuh
+2.auto = CSS menambahkan otomatis "scroll" ketika 
+         kontennya gak cukup lagi..
+3.hidden = konten yang berlebih akan disembunyikan
+4.scroll = akan muncul scroll bila konten penuh, dan tetap ada 
+		   bila konten tidak penuh juga
+*/

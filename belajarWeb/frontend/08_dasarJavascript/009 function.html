@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>function</title>
+    </head>
+    <body>
+
+    <script type="text/javascript">
+    /* Function adalah kunci utama pada javascript, yg membuat
+    javascript sangan powerful.
+
+    function :
+        1. sebuah sub-program / sub-routine yg dapat dipanggil
+           di bagian lain pada program
+        2. Merupakan struktur dasar pembentukan dari javascript
+        3. Disebut juga sebagai prosedur (kumpulan statement
+           untuk melakukan tugas atau menghitung sebuah nilai)
+        4. untuk dapat menggunakannyam kita harus membuat terlebih
+           dahulu function tersebut, lalu memanggilnya
+        5. Termasuk kedalam First-Class object
+
+    kenapa membuat function ?
+        1. Reusability (DRY : do not repeat yourself)
+        -karena dengan menggunakan function kita hanya menuliskan satu blok program cukup sekali, dan dapat dipanggil berulang ulang
+        2. Dekompisisi
+        -untuk menyembunyikan kompleksitas Program
+        3. Modularitas
+        -dengan terbagi program menjadi modul, lebih mudah melihat code,
+        daripada melihatnya perbaris
+
+    Kategori function :
+        1. Built-in function
+            - Fungsi yg sudah disediakan oleh javascript
+           String :
+            charAt(), slice(), split(), toString(), toLowerCase(),
+            toUpperCase()
+           Math :
+            sin(), cos(), tan(), random(), round(), floor(), ceil(),
+            log()
+            - Kita tinggal memanggilnya saja
+            contoh : alert()
+                     confirm()
+                     prompt()
+        2. User-defined function
+            - Fungsi yg kita buat sendiri
+            - Menggunakan keyword Function- Nama function (optional)
+            - Parameter / Argument
+                *disimpan di dalam ()
+                *boleh ada atau tidak, jika ada boleh lebih dari satu
+                *dipisahkan oleh koma (,)
+            - Function body, dibungkus dengan {}
+            - Dapat mengembalikan nilau (return value) atau tidak
+
+           Membuat user-defined Function :
+            - Dengan deklarasi / function declaration
+                contoh :
+                    function jumlahduabilang (a,b) {
+                    var total;
+                    total = a + b;
+
+                    return total;
+                }
+
+                *Memanggil / menjalankan function :
+                    contoh :
+                        alert (jumlahduabilangan (1,2));
+            - Dengan ekspresi / function expression
+                contoh :
+                    var tambah = function (a,b) {
+                    var total;
+                    total = a  + b;
+
+                    return total;
+                }
+
+            *Memanggil / menjalankan function :
+                contoh :
+                    alert (tambah (1,2));
+    */
+    function jumlahduabilang (a,b) {
+    var total;
+    total = a + b;
+
+    return total;
+    }
+    alert (jumlahduabilang(5,5));
+
+    </script>
+
+
+    </body>
+</html>

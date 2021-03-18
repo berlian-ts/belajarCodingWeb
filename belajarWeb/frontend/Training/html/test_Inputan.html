@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Inputan</title>
+
+        <style media="screen">
+            .z {color: red;
+                font-family : 'Georgia';
+            }
+        </style>
+
+    </head>
+    <body>
+        <input type="text" name="" value="" class="a">
+        <input type="button" name="" value="Cetak" class="b">
+        <div class="z">Berlian</div>
+
+
+        <script type="text/javascript">
+            document.write ("<div class=\"z\">Berlian</div>");
+
+            document.getElementsByClassName("b").onclick = function() {
+                var name = document.getElementsByClassName("a").value;
+                document.write (name);
+            }
+        </script>
+
+    </body>
+</html>

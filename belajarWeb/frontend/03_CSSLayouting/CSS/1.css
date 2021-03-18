@@ -1,0 +1,59 @@
+ /*  div{ display: blok; (default display nya "blok") }
+    span{ display: inline; (default display   nya "inline") }
+
+    value display = inline/inline-block/block/none
+
+ : inline : (b,strong,i,en,a,span,sub,sup,button,input,label,select,textarea)
+    1.elemen html yg secara default tidak menambah baris baru
+    2.lebar dan tinggi elemen sebesar konten yg ada di dalamnya
+    3.kita tidak dapat mengatur tinggi dan lebar dari elemen inline
+    4.margin dan padding hanya mempengaruhi elemen secara horizotal
+      ,tidak vertikal
+*/
+
+h1{ font-size: 45px; }
+div.navigasi{ background-color: pink; }
+div.main { background-color: lightgreen; }
+
+/* CSS tolong cari <span> yang ada di class main (inline) */
+div.main span{ background-color: lightblue; }
+
+/*
+  inline-block :
+    1.tidak ada elemen yg secara default memiliki properti
+      display: inline-block;
+    2.kita harus ubah secara manual properti tersebut
+    3.perilaku dasarnya sama dengan elemen inline
+    4.perbedaannya,elemen inline-block dapat kita atur tinggi dan lebar-nya
+*/
+
+a{
+  display: inline-block;
+  background-color: lightblue;
+  width: 100px;
+  height: 100px;
+}
+
+/*
+  : block = (h1-h6,p,ol,ul,li,form,hr,div)
+      1.elemen HTML yg secara default menambahkan baris baru ketika dibuat
+      2.jika tidak diatur lebar-nya,maka lebar default dari elemen block akan memenuhi lebar dari browser/parent-nya
+      3.kita dapat mengatur tinggi dan lebar dari elemen block
+      4.di dalam elemen block,kita dapat menyimpan tag dengan elemen inline,inline-block,atau bahkan elemen block lagi
+*/
+
+.navigasi h2{
+  background-color: orange;
+}
+div.main{
+  width: 600px;
+  background-color: lightgreen;
+}
+div.main h2{
+  background-color: red;
+}
+
+/*
+  : none
+    digunakan untuk menghilangkan sebuah elemen
+ */

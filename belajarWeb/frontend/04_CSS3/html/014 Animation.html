@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Animation</title>
+        <style media="screen">
+        /*
+            animation:
+              [name]
+              [duration]
+              [timing-function]
+              [delay]
+              [iteration-count (angka|infinite) ]
+              [direction] = normal,reverse,alternate,alternate-reverse
+                noarmal : animasi berjalan dari awal sampai akhir
+                reverse : animasi terbalik, akhir jdi awal dn sebalikny
+                alternate : berganti2, awal-akhir, dan akhir-awal
+                alternate-reverse : gantian tapi mulainya dari akhir dulu
+              [fill-mode] = menentukan akhir animasinya seperti apa..
+                none
+                forwards : menghentikan animasi bagian akhir
+                backwards
+                both
+              [play-state]
+                running : animasi berjalan
+                paused : animasi di pause, bisa di pause di tengah2 animasi menggunakan javascript
+        */
+            .kotak {
+                width: 200px;
+                height: 200px;
+                background-color: salmon;
+                /* jika animation diletakkan disini, maka
+                tiap refresh halaman akan di animasikan */
+
+            }
+            .kotak:hover {
+                animation: animasikotak 2s ease 3 alternate forwards;
+            }
+
+            @keyframes animasikotak {
+                0% {
+                    width: 200px;
+                }
+                50%{
+                    width: 500px;
+                    height: 200px;
+                }
+                100% {
+                    width: 500px;
+                    height: 500px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="kotak">
+
+        </div>
+
+
+    </body>
+</html>
